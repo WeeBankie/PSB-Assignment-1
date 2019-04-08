@@ -1,0 +1,48 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Basic setup. Most papers should leave these options alone.
+\documentclass[ceqn,usenatbib,onecolumn]{mnras}
+% fleqn aligns equations to the left.
+% to centre align replace fleqn with ceqn.
+
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{natbib}
+\usepackage{amssymb}
+
+\title{Galaxy Kinematics: Detecting Merger Signatures}
+\author{John Proctor}
+%% \date{April 2019}
+
+\begin{document}
+\maketitle
+
+\section{Assignment requirement}
+
+Briefly summarise the key methods and results of the following papers:
+
+\begin{itemize}
+    \item \citet{2011ApJ...742...11S} : {The Interstellar Medium in Distant Star-forming Galaxies: Turbulent Pressure, Fragmentation, and Cloud Scaling Relations in a Dense Gas Disk at z = 2.3}
+    \item \citet{2016A&A...591A..85B} : {Distinguishing disks from mergers: Tracing the kinematic asymmetries in local (U)LIRGs using kinemetry-based criteria}
+    \item \citet{2008ApJ...682..231S} : {Kinemetry of SINS High-Redshift Star-Forming Galaxies: Distinguishing Rotating Disks from Major Mergers}
+\end{itemize}
+
+\section{Assignment response}
+\citet{2011ApJ...742...11S}  observe a single gas-rich star-forming galaxy SMM J2135-0102 at $z=2.32$ lensed by the cluster MACS J2135-0102 at $z=0.326$. Sub-millimetre (SMM) observations at the EVLA were used to create 2-D kinematic maps of the gas velocity field using CO line emission as a tracer for H. The  velocity kinematic maps suggest an unstable rotating disc structure and reveal numerous clumps of high-density, turbulent, giant molecular clouds (GMCs) in the high-pressure ISM. High density GMCs have the potential for rapid gravitational collapse driving a continuing epoch of high mass-rate star formation.
+\par
+Both \citet{2008ApJ...682..231S} and \citet{2016A&A...591A..85B} employ the \texttt{kinemetry} analysis method \citep{2006MNRAS.366..787K} to distinguish disc dominated systems from those exhibiting major mergers. \texttt{Kinemetry} involves mapping both the gas velocity field and the gas velocity dispersion.
+\par
+\citet{2016A&A...591A..85B} examine the gas kinematics of nearby (ultra)luminous infrared galaxies ((U)LIRGs) at $z<0.1$. The objective is to analyse the kinematic properties of local (U)LIRGs to characterise their structures and thereby categorise those (U)LIRGs as having disc structures ('discs'), or possessing evidence of major merger activity ('mergers'). Their method employs optical integral field spectroscopy (IFS) data obtained at the VLT. H$\alpha$ emission is used as a gas velocity tracer. Kinematic analysis employs the \texttt{kinemetry} software package to categorise the systems as 'discs' or 'mergers'. Classification is dependent on the value of the total kinematic asymmetry output parameter $K_{tot}$. The authors conclude that the results confirm that well-defined discs can be effectively distinguished from well-defined mergers but there is intermediate, indeterminate class. The method is sensitive to angular resolution of the IFU.
+\par
+\citet{2008ApJ...682..231S} had earlier performed a similar analysis of warm gas kinematics as traced by H$\alpha$ emission, but concentrated on sample at $z\sim2$ using the NIR IFS instrument SIMFONI on the VLT. The classification method (discs or mergers) depends on the relationship between the asymmetric gas velocity $v_{asym}$ and the asymmetric gas velocity dispersion $\sigma_{asym}$ in the relationship for the total asymmetric velocity $K_{asym}={\sqrt{{v_{asym}}^2+{\sigma_{asym}}^2}}=0.5$. Values of $K_{asym}<0.5$ clearly delineate disks from mergers (i.e. those having $K_{asym}>0.5$).
+
+%%%%%%%%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%
+% The best way to enter references is to use BibTeX:
+\bibliographystyle{mnras}
+\bibliography{JPbib2019} 
+
+\end{document}
+
+\par
+\citet{2008ApJ...682..231S} and \citet{2011ApJ...742...11S} focus on systems at high redshift $z \sim 2$.
+
+HST WFC3 images in $VRJ$-bands were  used to produce a colour image of the cluster-lensed field.
